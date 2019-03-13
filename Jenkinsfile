@@ -18,6 +18,7 @@ volumes: [
             pwd
 	    npm install
 	    npm test
+	  """
         }
       }
       catch (exc) {
