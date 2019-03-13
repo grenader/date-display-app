@@ -13,10 +13,9 @@ volumes: [
     def myRepo = checkout scm
     stage('Test') {
       try {
-        container('node') {
+        container('gradle') {
           sh """
             pwd
-          
 	    npm install
 	    npm test
         }
@@ -27,4 +26,4 @@ volumes: [
       }
     }
   }
-
+}
