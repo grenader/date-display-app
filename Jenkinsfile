@@ -41,8 +41,8 @@ volumes: [
 	    echo "Create docker image"
 	    pwd
             docker login -u ${DOCKER_HUB_USER} -p ${DOCKER_HUB_PASSWORD}
-            docker build -t namespace/my-image:${gitCommit} .
-            docker push namespace/my-image:${gitCommit}
+            docker build -t grenader/team4:${gitCommit} .
+            docker push grenader/team4:${gitCommit}
             """
         }
       }
