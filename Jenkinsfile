@@ -47,5 +47,10 @@ volumes: [
         }
       }
     }
+    stage('Run kubectl') {
+      container('kubectl') {
+        sh "kubectl run --image= grenader/team4 team4"
+      }
+    }
   }
 }
